@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal Photography </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><u><i>Kunal Sharma  <i></u><span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Capturing Moments, <br>Creating Memories.</h1>
+        <p>Professional photography for weddings, portraits, and commercial projects.</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <h2 class="section-title" id="portfolio">Selected Works</h2>
+    <div class="gallery">
+        <!-- Using Unsplash placeholders -->
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="C:\Users\pango\Desktop\NK4_7585.JPG">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="C:\Users\pango\Desktop\NK4_7583.JPG" alt="Portrait">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="C:\Users\pango\Desktop\NK4_7544 - Copy.JPG" alt="Event">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="C:\Users\pango\Desktop\WhatsApp Image 2025-01-18 at 03.26.48_16f262c2.jpg" alt="Fashion">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src= "C:\Users\pango\Desktop\NK4_7842 - Copy.JPG"alt="Nature">
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="C:\Users\pango\Desktop\NK4_7592.JPG" alt="Studio">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1552168324-d612d77725e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Photographer">
+        </div>
+        <div class="about-text">
+            <h2>Behind the Lens</h2>
+            <p>Hello! I'm kunal sharma , a professional photographer based in india . With over 10 years of experience, I specialize in capturing the raw emotion and beauty of life's most important moments.</p>
+            <br>
+            <p>My philosophy is simple: photography is not just about the camera settings, it's about the connection between the subject and the lens. Whether it's a wedding day or a corporate headshot, I promise to deliver images that tell your unique story.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject (e.g., Wedding, Portrait)" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 kunal Photography. All rights reserved.</p>
+        <p>Follow me on Instagram | Facebook | Twitter</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Screen Image">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
